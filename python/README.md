@@ -16,15 +16,17 @@ README.md
 **Step 1:** Include submodule
 
 ```
-cd ./ext
+pushd ./ext
 git submodule add git@github.com:nardeas/firmware.git
+popd
 ```
 
 **Step 2:** Create submodule symlinks
 
 ```
-cd ..
-ln -s ext/firmware/python/micropython/devices/<filename>.py src/lib/devices/
+pushd src/lib/devices
+ln -s ../../../ext/firmware/python/micropython/devices/<filename>.py
+popd
 ```
 
 **Step 3:** Commit submodule links 
