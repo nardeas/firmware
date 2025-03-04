@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "firmware"
+version = "0.0.1"
+description = "Various firmware reference implementations"
+authors = ["Andreas Urbanski <11169240+nardeas@users.noreply.github.com>"]
+license = "MIT"
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.12"
+ipython = "^9.0.1"
+mpr = "^1.31"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
