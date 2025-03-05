@@ -35,3 +35,10 @@ popd
 git add .gitmodules src/lib/devices/<filename>.py
 git commit -m "Add submodule symlinks" 
 ```
+
+### Updating submodules
+
+```
+git submodule status
+git submodule update --remote
+```
